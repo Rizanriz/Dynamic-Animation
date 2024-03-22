@@ -1,3 +1,23 @@
+const login = (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username && password) {
+        console.log(username, password);
+        sessionStorage.setItem("username", username);
+        sessionStorage.setItem("password", password);
+        
+        window.location.href = "home.html"; // Redirect to home.html
+    } else {
+        alert("Enter valid details");
+    }
+}
+
+
+
+
 const spanContainer = document.createElement("div");
 spanContainer.classList.add("snow-container");
 document.body.appendChild(spanContainer);

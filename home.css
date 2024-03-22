@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: noto;
+    src: url(./NotoSerif_ExtraCondensed-BoldItalic.ttf);
+}
+body{
+    font-family: noto;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+.nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    transition: ease-in-out .3s;
+}
+.nav-link:hover{
+    color: antiquewhite;
+}
+.logout{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+}
