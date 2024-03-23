@@ -3,28 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    <link
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    /> -->
-    <script src="https://kit.fontawesome.com/f8eea8b8ee.js" crossorigin="anonymous"></script>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./home.css" />
     <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-
     <section class="header-wrapper">
       <header id="navbar">
         <div class="logo">
-          <h2>Mohd <span>Rizwan</span></h2>
+          <h2>Hallo <span id="displayuser">Rizwan</span></h2>
         </div>
         <nav id="nav">
-            <a href=""><p>Portfolio</p></a>
-            <a href=""><p>Services</p></a>
-            <a href=""><p>Testimonial</p></a>
-            <a href=""><p>Contact</p></a>
+          <a href="#home"><p>Portfolio</p></a>
+          <a href="#services"><p>Services</p></a>
+          <a href="#testimonials"><p>Testimonial</p></a>
+          <a href="#contact"><p>Contact</p></a>
         </nav>
         <div id="bars" class="bars">
           <i class="fa-solid fa-bars-staggered"></i>
@@ -38,7 +42,10 @@
           <h1>Hai I am <span>Rizwan</span></h1>
           <h2>Hai I am <span id="element"></span></h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corrupti, omnis dicta quas placeat eius rem porro, sed reprehenderit voluptatem maiores nam vero rerum consequuntur est sint tenetur autem. Laboriosam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            corrupti, omnis dicta quas placeat eius rem porro, sed reprehenderit
+            voluptatem maiores nam vero rerum consequuntur est sint tenetur
+            autem. Laboriosam.
           </p>
           <div class="social-icons">
             <i class="fa-brands fa-instagram"></i>
@@ -52,23 +59,301 @@
           </div>
         </div>
         <div class="hero-img">
-          <img src="./IMG_9760a-min.jpg" alt="">
+          <img src="./pic.jpg" alt="" />
         </div>
       </div>
-
     </section>
 
-    <script>
+    <section>
+      <div class="education">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-box left">
+            <span>2019</span>
+            <h2>High School</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+              exercitationem quibusdam voluptatum neque ut doloribus incidunt
+              iure perspiciatis. Totam corporis
+            </p>
+          </div>
+          <div class="timeline-box right">
+            <span>2021</span>
+            <h2>University</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+              exercitationem quibusdam voluptatum neque ut doloribus incidunt
+              iure perspiciatis. Totam corporis
+            </p>
+          </div>
+          <div class="timeline-box left">
+            <span>2023</span>
+            <h2>Intrnship</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+              exercitationem quibusdam voluptatum neque ut doloribus incidunt
+              iure perspiciatis. Totam corporis
+            </p>
+          </div>
+          <div class="timeline-box right">
+            <span>2024</span>
+            <h2>Job</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+              exercitationem quibusdam voluptatum neque ut doloribus incidunt
+              iure perspiciatis. Totam corporis
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      if(sessionStorage.getItem("username")){
-        displayuser.innerHTML = sessionStorage.getItem("username").split(" ")[0]
-      }else{
-        alert ("login again")
-        window.location = "index.html"
+    <section>
+      <div class="services" id="services">
+        <h2>Services</h2>
+        <div class="services-cards">
+          <div class="services-card">
+            <h3>UI Designs</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+              temporibus saepe illo! Molestiae dolores animi tenetur iste
+              magnam, id aut cumque nulla deserunt ducimus qui est aliquid,
+              explicabo voluptas placeat?
+            </p>
+          </div>
+          <div class="services-card">
+            <h3>Frontend Development</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+              temporibus saepe illo! Molestiae dolores animi tenetur iste
+              magnam, id aut cumque nulla deserunt ducimus qui est aliquid,
+              explicabo voluptas placeat?
+            </p>
+          </div>
+          <div class="services-card">
+            <h3>backend Development</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+              temporibus saepe illo! Molestiae dolores animi tenetur iste
+              magnam, id aut cumque nulla deserunt ducimus qui est aliquid,
+              explicabo voluptas placeat?
+            </p>
+          </div>
+          <div class="services-card">
+            <h3>Figma Designer</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+              temporibus saepe illo! Molestiae dolores animi tenetur iste
+              magnam, id aut cumque nulla deserunt ducimus qui est aliquid,
+              explicabo voluptas placeat?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="testimonial_main" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial_sec">
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected randomised.
+                </p>
+                <div class="testimonial_user">
+                  <img src="./images/test1.webp" alt="" />
+                  <div>
+                    <h4>Stanny Smith</h4>
+                    <p>CEO.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_sec">
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected randomised.
+                </p>
+                <div class="testimonial_user">
+                  <img src="images/test2.webp" alt="" />
+                  <div>
+                    <h4>Devid Miller</h4>
+                    <p>CEO.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_sec">
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected randomised.
+                </p>
+                <div class="testimonial_user">
+                  <img src="images/test3.webp" alt="" />
+                  <div>
+                    <h4>Tonny Shark</h4>
+                    <p>CEO.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial_sec">
+                <p>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected randomised.
+                </p>
+                <div class="testimonial_user">
+                  <img src="images/test1.webp" alt="" />
+                  <div>
+                    <h4>Stanny Smith</h4>
+                    <p>CEO.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+
+        <div class="contact_container">
+          <div class="contact_detail">
+            <h3>Contact Us</h3>
+            <h4>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+              delectus quasi aspernatur vitae laudantium! Placeat numquam
+              quisquam quidem ratione ullam.
+            </h4>
+            <div>
+              <i class="fa-solid fa-map-pin"></i>
+              <p>7 Green Lake Street Crawfordsville, IN 47933 USA</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p>5322111</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <p>Riz@gmail.com</p>
+            </div>
+          </div>
+          <form class="contact_form">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Subject" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social_links">
+        <a
+          href="https://www.instagram.com/riz_z_z_?igsh=NTlram95Nm9qbmx1"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home"><p>Home</p></a>
+        <a href="#services"><p>Services</p></a>
+        <a href="#testimonials"><p>Testimonial</p></a>
+        <a href="#contact"><p>Contact</p></a>
+        <p onclick="logout()">Logout</p>
+      </div>
+      <p>Copyright © 2024 by <span>Rizan</span>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      let navbar = document.querySelector("#navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 10) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      });
+
+      let bars = document.querySelector("#bars");
+      let nav = document.querySelector("#nav");
+      let nav_links = document.querySelectorAll("#nav a");
+
+      bars.addEventListener("click", () => {
+        nav.classList.toggle("show");
+      });
+
+      nav_links.forEach((links) => {
+        links.addEventListener("click", () => {
+          nav.classList.toggle("show");
+        });
+      });
+
+      var typed = new Typed("#element", {
+        strings: ["Website Designer", "Web Developer", "UI/UX Designer"],
+        typeSpeed: 50,
+        loop: true,
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+
+      if (sessionStorage.getItem("username")) {
+        displayuser.innerHTML = sessionStorage
+          .getItem("username")
+          .split(" ")[0];
+      } else {
+        alert("login again");
+        window.location = "index.html";
       }
 
       const logout = () => {
-        sessionStorage.clear()
+        sessionStorage.clear();
         window.location = "index.html";
       };
     </script>
