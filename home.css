@@ -93,6 +93,7 @@ button{
     border: none;
     font-size: 18px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 button:hover{
     box-shadow:0 0 30px var(--main-color);
@@ -589,6 +590,9 @@ footer p span{
     .services_card{
         width: 45% ;
     }
+    .hero-info{
+        width: 100%;
+    }
 }
 @media (max-width: 900px) {
   .bars {
@@ -600,7 +604,7 @@ footer p span{
     left: 0%;
     width: 100%;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #9400feba;
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -627,6 +631,10 @@ footer p span{
     margin-top: 50px;
     width: 100%;
   }
+  .hero-info{
+    width: 100%;
+}
+  
 }
 @media (max-width: 768px) {
     .hero_info h1{
@@ -645,10 +653,40 @@ footer p span{
     .timeline .right{
         margin-left: 0%;
     }
+    .hero-info{
+        width: 100%;
+    }
+    .timeline-box{
+        width: 100%;
+        margin-bottom: 20px
+    }
+    .services-cards{
+        width: 100%;
+        flex-direction: column;
+    }
+    .services-card{
+        width: 100%;
+        height: 100%;
+    }
 }
 @media (max-width: 500px) {
     .testimonial_main h2,.services h2,.education h2{
         font-size: 40px;
+    }
+    .hero-img img{
+        width: 300px;
+        height:300px;
+    }
+    .hero-info{
+        width: 100%;
+    }
+    .services-cards{
+        width: 100%;
+        flex-direction: column;
+    }
+    .services-card{
+        width: 100%;
+        height: 100%;
     }
     .testimonial_sec{
         width: 90%;
@@ -657,8 +695,12 @@ footer p span{
     .contact_form{
         width: 100%;
     }
+    .timeline-box{
+        width: 100%;
+        margin-bottom: 20px
+    }
+
     footer{
-        
     gap: 30px;
     padding: 30px 5%;
     }
